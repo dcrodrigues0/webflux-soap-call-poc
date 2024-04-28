@@ -1,0 +1,14 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: spring-reactive-webservice-call
+
+webservices:
+  correios:
+    info:
+      user: ${USER_CORREIOS:defaultUser}
+      pass: ${PASS_CORREIOS:defaultPass}
+      defaultUri: ${CORREIOS_DEFAULT_URI:https://apphom.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente}
+      contextPath: ${CONTEXT_PATH:com.acme.springreactivewebservicecall.wsdl}
